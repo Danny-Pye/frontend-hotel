@@ -1,0 +1,29 @@
+@import "../../scss/variables.scss";
+@import "../../scss/animations.scss";
+
+.feature-box {
+  height: 30rem;
+  width: 18%;
+  background-color: aliceblue;
+  z-index: 22;
+  color: $dark;
+  display: inherit;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+
+  &:hover .icon-box{
+    color: $primary-full;
+
+  }
+}
+
+.icon-box {
+  font-size: 5rem;
+  color: $secondary-full;
+
+
+}

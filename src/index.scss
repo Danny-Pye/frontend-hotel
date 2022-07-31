@@ -1,0 +1,28 @@
+:root {
+  --primary: rgba(57, 91, 100, 0.1);
+  --secondary: rgba(165, 201, 202, 0.53);
+  --dark: #2C3333;
+  --light: #E7F6F2;
+}
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+}
+
+body{
+  font-family: "Roboto Light", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.7;
+  color: var(--light);
+  background-color: var(--primary);
+  padding: 22px;
+}
