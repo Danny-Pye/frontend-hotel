@@ -24,6 +24,11 @@
     background-color: $light;
     color: $dark;
   }
+
+  &-secondary {
+    background-color: $primary-full;
+    color: $light;
+  }
 }
 
 .btn:link,

@@ -5,6 +5,7 @@ import Header from './components/header/Header';
 import Main from "./components/explanation/Main";
 import Options from "./components/options/Options";
 import LocalArea from "./components/local-area/LocalArea";
+import ContactPage from "./components/contact-form/ContactPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Main/>
       <Options/>
       <LocalArea/>
+        <ContactPage/>
     </div>
   );
 }

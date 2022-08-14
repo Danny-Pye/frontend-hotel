@@ -20,7 +20,7 @@ const Card = (props) => {
             <div className={`card__side card-back card-back-${props.num}`}>
                 <h3>Book Now</h3>
                 <h4>Rooms starting from £60</h4>
-                <Button btnStyle={"light"}/>
+                <Button btnStyle={"light"} text="Book A Stay"/>
 
             </div>
         </div>

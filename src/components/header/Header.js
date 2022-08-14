@@ -14,7 +14,7 @@ const Header = () => {
                     <span>Fancy Hotel</span>
                     <span>people like it here</span>
                 </h1>
-                <Button btnStyle={"dark"}/>
+                <Button btnStyle={"dark"} text="Come And Stay"/>
             </div>
         </header>
     );
