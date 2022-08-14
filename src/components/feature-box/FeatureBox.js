@@ -1,5 +1,6 @@
 import React from 'react';
 import './FeatureBox.scss';
+import '../options/Options.scss'
 
 const FeatureBox = (props) => {
     return (

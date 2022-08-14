@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.scss'
 import logoImg from '../../images/kisspng-react-logo-javascript-front-and-back-ends-user-int-5afef575c096e1.8015139215266584217889.png';
+import Button from "../button/Button";
 
 const Header = () => {
     return(
@@ -13,7 +14,7 @@ const Header = () => {
                     <span>Fancy Hotel</span>
                     <span>people like it here</span>
                 </h1>
-                <a href="#" className="btn">Stay with us</a>
+                <Button btnStyle={"dark"}/>
             </div>
         </header>
     );

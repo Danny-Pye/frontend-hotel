@@ -1,0 +1,144 @@
+@import "../../scss/variables.scss";
+@import "../../scss/animations.scss";
+
+.card {
+  position: relative;
+  height: 50vh;
+  width: 20vw;
+  perspective: 200rem;
+
+
+  &__side {
+
+    transition: all 1s ease;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  &:hover .card-front {
+    transform: rotateY(-180deg) scale(1.3);
+
+  }
+
+  &:hover .card-back {
+    transform: rotateY(0) scale(1.3);
+  }
+
+}
+.card-front {
+  background-color: $light;
+  color: $dark;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .card__header {
+    height: 45%;
+    clip-path: polygon(0 0 , 100% 0, 100% 80%, 0 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen;
+
+    &-1 {
+      background-image: linear-gradient(to right bottom, $primary-full, $secondary-full), url("../../images/lone-tree-gf4b900fcc_1280.jpg")  ;
+    }
+
+    &-2 {
+      background-image: linear-gradient(to right bottom, $primary-full, $secondary-full), url("../../images/waitress-g18a84de9d_1280.jpg")  ;
+    }
+
+    &-3 {
+      background-image: linear-gradient(to right bottom, $primary-full, $secondary-full), url("../../images/salad-g3ecf0178c_1280.jpg")  ;
+    }
+
+  }
+
+  .card__title {
+    font-size: 1.7rem;
+    font-family: $font-monserrat;
+    text-transform: uppercase;
+    color: $light;
+    position: absolute;
+    top: 20%;
+    right: 2rem;
+    text-align: right;
+    max-width: 50%;
+
+    &-span {
+      padding: 0.2rem 0.3rem;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+
+      &-1 {
+        background-image: linear-gradient(to right bottom, $secondary-full, $secondary)
+      }
+
+      &-2 {
+        background-image: linear-gradient(to right bottom, $secondary-full, $secondary)
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom, $secondary-full, $secondary)
+      }
+    }
+
+  }
+
+  .card__info {
+    height: 50%;
+    padding: 2rem;
+    font-family: $font-indie-flower;
+    font-size: 1.2rem;
+
+    ul {
+      height: 100%;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+
+
+      li {
+        border-bottom: 1px solid gray;
+
+      }
+    }
+  }
+
+}
+
+.card-back {
+
+  color: $light;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h4 {
+    padding: 2rem;
+  }
+
+
+  &-1 {
+    background-image: linear-gradient(to right bottom, $primary-full, $secondary-full);
+  }
+
+  &-2 {
+    background-image: linear-gradient(to right bottom, $primary-full, $secondary-full);
+  }
+
+  &-3 {
+    background-image: linear-gradient(to right bottom, $primary-full, $secondary-full);
+  }
+}
+

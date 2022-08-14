@@ -1,0 +1,31 @@
+@import "../../scss/variables.scss";
+@import "../../scss/animations.scss";
+
+.local-area-main{
+  background-color: $light;
+  margin-top: -15vh;
+  height: 105vh;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  padding-top: 15vh;
+  color: $dark;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+
+  h2 {
+    font-family: $font-uchen;
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+}
+
+.column {
+
+}
+
+//.perspective{
+//  perspective: 100rem;
+//  //-moz-perspective: 100rem;
+//}
