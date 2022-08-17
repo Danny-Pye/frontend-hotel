@@ -1,5 +1,6 @@
 @import "../../scss/variables.scss";
 @import "../../scss/animations.scss";
+@import "../../scss/mixins.scss";
 
 .explanation-section {
   min-height: 100vh;
@@ -8,10 +9,16 @@
   z-index: -3;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
+
+
   :first-child {
     padding: 4rem 0 0 0;
     flex-direction: column;
     align-items: center;
+
+    @include responsive(tablet-portrait) {
+      padding: 2rem 0 0 0;
+    }
   }
 
   .row {
@@ -42,10 +49,25 @@
 
     p {
       font-family: $font-monserrat;
+      font-size: clamp(0.8rem, 1.9vw, 1.5rem);
+
+      @include responsive(tablet-portrait) {
+        line-height: 2.5;
+      }
+
+      @include responsive(phone) {
+        line-height: 1.5;
+      }
+
+
 
       &:not(:last-child) {
         margin-bottom: 1.2rem;
       }
+    }
+
+    h3 {
+      font-size: clamp(1.1rem, 2.2vw, 1.8rem);
     }
 
     :first-child {
@@ -122,6 +144,9 @@
   max-width: 45vw;
   position: relative;
 
+  @include responsive(tablet-portrait) {
+    max-width: 100%;
+  }
 
 
   &:hover .picture:not(:hover) {
@@ -138,6 +163,11 @@
   position: absolute;
   transition: all .2s;
   outline-offset: 1rem;
+
+  @include responsive(tablet-portrait) {
+    width: 100%;
+    position: static;
+  }
 
   &--1 {
     left: 0;

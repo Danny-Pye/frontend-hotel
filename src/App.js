@@ -17,9 +17,7 @@ function App() {
 
   return (
     <div className="big-div">
-        <NavItem isOpen={isOpen} setIsOpen={setIsOpen} icon={<MenuOutlined />}>
-            {/*<DropDown />*/}
-        </NavItem>
+        <NavItem isOpen={isOpen} setIsOpen={setIsOpen} icon={<MenuOutlined />} />
         <Header/>
         <Main/>
         <Options/>

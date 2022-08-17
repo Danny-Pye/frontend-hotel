@@ -1,5 +1,6 @@
 @import "../../scss/variables.scss";
 @import "../../scss/animations.scss";
+@import "../../scss/mixins.scss";
 
 .local-area-main{
   background-color: $light;
@@ -8,12 +9,29 @@
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   padding-top: 15vh;
   color: $dark;
+
+  @include responsive(phone) {
+    margin-top: -20vh;
+
+  }
 }
 
 .row {
   display: flex;
   justify-content: space-around;
   padding-top: 2rem;
+
+  @include responsive(tablet-portrait) {
+
+  }
+
+  @include responsive(phone) {
+    flex-wrap: wrap;
+  }
+
+
+
+
 
   h2 {
     font-family: $font-uchen;

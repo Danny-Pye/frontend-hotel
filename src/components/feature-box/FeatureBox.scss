@@ -1,5 +1,6 @@
 @import "../../scss/variables.scss";
 @import "../../scss/animations.scss";
+@import "../../scss/mixins.scss";
 
 .feature-box {
   height: 30rem;
@@ -16,6 +17,14 @@
   border-radius: 6px;
   transition: transform 0.3s;
 
+  @include responsive(tablet-portrait) {
+    margin: 1rem 1rem;
+    width: 35vw;
+    height: 40%;
+    z-index: 800;
+
+  }
+
   &:hover {
     transform: translateY(-0.6rem) scale(1.1);
   }
@@ -29,6 +38,10 @@
 }
 
 .icon-box {
-  font-size: 5rem;
+  font-size: clamp(3rem, 7vw,5rem);
   color: $secondary-full;
+}
+
+.feat-box__text {
+  font-size: clamp(0.8rem, 1vw, 2rem);
 }

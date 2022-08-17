@@ -10,7 +10,6 @@ const NavItem = (props) => {
             </a>}
 
             {props.isOpen && <DropDown isOpen={props.isOpen} setIsOpen={props.setIsOpen} />}
-            {/*{props.isOpen && props.children}*/}
         </li>
     );
 }
