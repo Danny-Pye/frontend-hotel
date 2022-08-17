@@ -1,6 +1,7 @@
 import React from 'react';
 import './DropDown.scss';
-import {MessageOutlined, ReadOutlined, TeamOutlined, ApiOutlined, MobileOutlined, LoginOutlined, PieChartOutlined } from '@ant-design/icons';
+
+import {MessageOutlined, ReadOutlined, TeamOutlined, MobileOutlined, CloseOutlined} from '@ant-design/icons';
 
 const DropDown = (props) => {
 
@@ -15,20 +16,29 @@ const DropDown = (props) => {
     }
 
     return(
-        <div className="dropdown">
+        <div className="backdrop" onClick={() => {
+            props.setIsOpen(!props.isOpen);
+        }}>
 
-            <DropDownItem leftIcon={<ReadOutlined />} page={"/manuals"} >
-                <p>See Menu</p>
-            </DropDownItem>
-            <DropDownItem leftIcon={<MessageOutlined/>} page={"/chat"} >
-                <p>Get In Touch</p>
-            </DropDownItem>
-            <DropDownItem leftIcon={<TeamOutlined />} page={"/knowledge"} >
-                <p>Leave A Review</p>
-            </DropDownItem>
-            <DropDownItem leftIcon={<MobileOutlined />} page={"/app"} >
-                <p>Book Now</p>
-            </DropDownItem>
+            {props.isOpen && <a href="#" className="icon-button-x" onClick={() => props.setIsOpen(!props.isOpen)}>
+                <CloseOutlined />
+            </a>}
+
+            <div className="dropdown" >
+
+                <DropDownItem leftIcon={<ReadOutlined />} page={"/manuals"} >
+                    <p>See Menu</p>
+                </DropDownItem>
+                <DropDownItem leftIcon={<MessageOutlined/>} page={"/chat"} >
+                    <p>Get In Touch</p>
+                </DropDownItem>
+                <DropDownItem leftIcon={<TeamOutlined />} page={"/knowledge"} >
+                    <p>Leave A Review</p>
+                </DropDownItem>
+                <DropDownItem leftIcon={<MobileOutlined />} page={"/app"} >
+                    <p>Book Now</p>
+                </DropDownItem>
+            </div>
 
 
 

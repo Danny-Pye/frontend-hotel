@@ -1,14 +1,16 @@
 import React from 'react';
 import './NavItem.scss';
+import DropDown from "./DropDown";
 
 const NavItem = (props) => {
     return(
         <li className="nav-item">
-            <a href="#" className="icon-button" onClick={() => props.setIsOpen(!props.isOpen)}>
+            {!props.isOpen && <a href="#" className="icon-button" onClick={() => props.setIsOpen(!props.isOpen)}>
                 {props.icon}
-            </a>
+            </a>}
 
-            {props.isOpen && props.children}
+            {props.isOpen && <DropDown isOpen={props.isOpen} setIsOpen={props.setIsOpen} />}
+            {/*{props.isOpen && props.children}*/}
         </li>
     );
 }

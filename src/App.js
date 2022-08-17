@@ -8,18 +8,17 @@ import LocalArea from "./components/local-area/LocalArea";
 import ContactPage from "./components/contact-form/ContactPage";
 import Footer from "./components/footer/Footer";
 import NavItem from "./components/nav/NavItem";
-import DropDown from "./components/nav/DropDown";
+// import DropDown from "./components/nav/DropDown";
 import {MenuOutlined } from '@ant-design/icons';
 
 function App() {
     const [isOpen, setIsOpen] = useState(false);
 
 
-
   return (
     <div className="big-div">
         <NavItem isOpen={isOpen} setIsOpen={setIsOpen} icon={<MenuOutlined />}>
-            <DropDown/>
+            {/*<DropDown />*/}
         </NavItem>
         <Header/>
         <Main/>
