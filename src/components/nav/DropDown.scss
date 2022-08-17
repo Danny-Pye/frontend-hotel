@@ -1,0 +1,56 @@
+@import "../../scss/variables.scss";
+@import "../../scss/animations.scss";
+
+.dropdown{
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    width: 35vw;
+    background-color: $secondary;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow: hidden;
+    animation-name: showMenu;
+    animation-duration: 1s;
+}
+
+.menu-item{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: background var(--speed);
+    padding: 2rem 0.5rem;
+    margin: 1.2rem 1rem;
+    animation-name: showMenu;
+    animation-duration: 1.5s;
+    text-decoration: none;
+
+    p {
+        margin-left: 2rem;
+        color: $dark;
+        font-family: $font-monserrat;
+        font-weight: bold;
+    }
+
+}
+
+.menu-item:hover {
+    background-color: $light;
+}
+
+.icon-right{
+    margin-left: auto;
+}
+
+@keyframes showMenu{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
