@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/frontend-hotel/static/css/main.4ca09d08.css",
+    "main.js": "/frontend-hotel/static/js/main.b266d2cc.js",
+    "static/js/787.5ba0748e.chunk.js": "/frontend-hotel/static/js/787.5ba0748e.chunk.js",
+    "static/media/hotel-g70bf85f15_1920.jpg": "/frontend-hotel/static/media/hotel-g70bf85f15_1920.f444cca103e7e5bc857c.jpg",
+    "static/media/salad-g3ecf0178c_1280.jpg": "/frontend-hotel/static/media/salad-g3ecf0178c_1280.1cf78a910f6c9322be2a.jpg",
+    "static/media/villa-cortine-palace-g7369f6025_1280.jpg": "/frontend-hotel/static/media/villa-cortine-palace-g7369f6025_1280.f5b0ce7bbb3801e3d305.jpg",
+    "static/media/waitress-g18a84de9d_1280.jpg": "/frontend-hotel/static/media/waitress-g18a84de9d_1280.7a147434031c2e7ac43d.jpg",
+    "static/media/lone-tree-gf4b900fcc_1280.jpg": "/frontend-hotel/static/media/lone-tree-gf4b900fcc_1280.83734d1ecc1028642b77.jpg",
+    "static/media/receptionists-g6a8d0af5e_1920.jpg": "/frontend-hotel/static/media/receptionists-g6a8d0af5e_1920.b2760b7bf6d8a75246ed.jpg",
+    "static/media/kisspng-react-logo-javascript-front-and-back-ends-user-int-5afef575c096e1.png": "/frontend-hotel/static/media/kisspng-react-logo-javascript-front-and-back-ends-user-int-5afef575c096e1.8015139215266584217889.65ca18b4e9841f85a691.png",
+    "static/media/hotel-gbb350926e_1280.jpg": "/frontend-hotel/static/media/hotel-gbb350926e_1280.7ea43bc7c1193f25f8ba.jpg",
+    "static/media/towel-ga9a84c032_1280.jpg": "/frontend-hotel/static/media/towel-ga9a84c032_1280.9d309742207f77ab3482.jpg",
+    "index.html": "/frontend-hotel/index.html",
+    "main.4ca09d08.css.map": "/frontend-hotel/static/css/main.4ca09d08.css.map",
+    "main.b266d2cc.js.map": "/frontend-hotel/static/js/main.b266d2cc.js.map",
+    "787.5ba0748e.chunk.js.map": "/frontend-hotel/static/js/787.5ba0748e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ca09d08.css",
+    "static/js/main.b266d2cc.js"
+  ]
+}
