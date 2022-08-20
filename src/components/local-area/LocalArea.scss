@@ -10,9 +10,12 @@
   padding-top: 15vh;
   color: $dark;
 
+
   @include responsive(phone) {
     margin-top: -20vh;
-
+    height: auto;
+    padding: 10rem 0;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   }
 }
 
@@ -20,6 +23,7 @@
   display: flex;
   justify-content: space-around;
   padding-top: 2rem;
+
 
   @include responsive(tablet-portrait) {
 

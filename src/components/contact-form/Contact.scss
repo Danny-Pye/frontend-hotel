@@ -1,5 +1,6 @@
 @import "../../scss/variables.scss";
 @import "../../scss/animations.scss";
+@import "../../scss/mixins.scss";
 
 
 .contact-page {
@@ -7,12 +8,20 @@
   background-color: $secondary-full;
   margin-top: -17vh;
   padding: 10rem 6rem 6rem;
+  @include responsive(tablet-portrait) {
+    padding: 5rem 3rem 3rem;
+  }
 
 
   .shadow {
     height: 100%;
     width: 100%;
     filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.5));
+    overflow: visible;
+
+    @include responsive(tablet-portrait) {
+
+    }
   }
 
   .contact-page__inner {
@@ -62,6 +71,8 @@
     background-color: rgba($primary-full, 0.7);
     color: $light;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+
 
 
 

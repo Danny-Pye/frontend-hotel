@@ -5,6 +5,7 @@ import Button from "../button/Button";
 
 const Header = () => {
     return(
+
         <header className="header">
             <div className="logo-container">
                 <img alt="logo of react symbol" src={logoImg} />
@@ -17,6 +18,7 @@ const Header = () => {
                 <Button btnStyle={"dark"} text="Come And Stay"/>
             </div>
         </header>
+
     );
 }
 

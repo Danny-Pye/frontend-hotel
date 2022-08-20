@@ -1,5 +1,6 @@
 @import "../../scss/variables.scss";
 @import "../../scss/animations.scss";
+@import "../../scss/mixins.scss";
 
 .dropdown{
     position: absolute;
@@ -13,6 +14,14 @@
     overflow: hidden;
     animation-name: showMenu;
     animation-duration: 1s;
+
+    @include responsive(tablet-landscape) {
+        width: 50%;
+    }
+
+    @include responsive(tablet-portrait) {
+        width: 60%;
+    }
 }
 
 .menu-item{
